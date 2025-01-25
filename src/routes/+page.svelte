@@ -1,5 +1,14 @@
-<div class="flex w-full flex-col justify-between p-10 px-20 lg:container lg:flex-row">
-	<div class="lg:w-5/12">card</div>
+<div class="flex w-full flex-col justify-between p-10 lg:container lg:flex-row lg:px-20">
+	<div class="p-10 lg:sticky lg:top-0 lg:h-[40rem]">
+		<div class="h-full w-80 rounded-2xl bg-gray-100 p-4 py-4 text-center">
+			<div class="p-4">
+				<img src="/self.jpeg" alt="me" class="rounded-2xl" />
+			</div>
+			<h1 class="mb-4 text-4xl font-bold text-gray-900">Deepjyoti Deb</h1>
+			<p class="mb-2 text-xl text-gray-700">A Software Engineer who has</p>
+			<p class="text-xl text-gray-700">developed countless innovative solutions.</p>
+		</div>
+	</div>
 	<div class="mx-auto space-y-9 lg:mx-0 lg:w-7/12">
 		<!-- Title -->
 		<div class="text-center lg:text-left lg:text-9xl">

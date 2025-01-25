@@ -3,3 +3,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.lg-sticky-card {
+    @apply lg:sticky lg:top-0 lg:h-40 lg:w-5/12;
+}
