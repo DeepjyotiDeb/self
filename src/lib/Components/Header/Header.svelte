@@ -1,7 +1,5 @@
 <script>
 	import { Briefcase, Folder, House, SquarePen } from 'lucide-svelte';
-
-	// You can add any necessary script here
 </script>
 
 <header class="flex justify-center p-8">
@@ -12,7 +10,7 @@
 			href="/"
 		>
 			<div class="p-2">
-				<House />
+				<House size={20} />
 			</div>
 		</a>
 		<a
@@ -21,7 +19,7 @@
 			href="/"
 		>
 			<div class="p-2">
-				<Folder />
+				<Folder size={20} />
 			</div>
 		</a>
 		<a
@@ -30,7 +28,7 @@
 			href="/"
 		>
 			<div class="p-2">
-				<Briefcase />
+				<Briefcase size={20} />
 			</div>
 		</a>
 		<a
@@ -39,7 +37,7 @@
 			href="/"
 		>
 			<div class="p-2">
-				<SquarePen />
+				<SquarePen size={20} />
 			</div>
 		</a>
 	</div>
