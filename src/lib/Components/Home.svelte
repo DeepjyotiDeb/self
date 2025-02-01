@@ -1,5 +1,5 @@
 <script>
-	import { ArrowUpRight } from 'lucide-svelte';
+	import { ArrowUpRight, FileStack, Layers, Table, Table2 } from 'lucide-svelte';
 
 	import Saos from './Saos.svelte';
 	const animString = 'fade-in 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both';
@@ -8,7 +8,7 @@
 <!-- Title -->
 <Saos animation={animString}>
 	<div class="text-center lg:text-left lg:text-9xl">
-		<div class="text-7xl font-bold md:text-8xl">
+		<div class="text-6xl font-bold md:text-7xl lg:text-8xl">
 			<div class="">SOFTWARE</div>
 			<div class=" text-[#B6B4BD20]">ENGINEER</div>
 		</div>
@@ -22,17 +22,17 @@
 <Saos animation={animString}>
 	<div class="flex justify-center gap-8 text-center lg:justify-start lg:text-left">
 		<div class="">
-			<div class="text-6xl font-semibold">+3</div>
+			<div class="text-4xl font-semibold md:text-6xl">+3</div>
 			<div>YEARS OF</div>
 			<div>EXPERIENCE</div>
 		</div>
 		<div class="">
-			<div class="text-6xl font-semibold">+22</div>
+			<div class="text-4xl font-semibold md:text-6xl">+22</div>
 			<div>PROJECTS</div>
 			<div>COMPLETED</div>
 		</div>
 		<div class="">
-			<div class="text-6xl font-semibold">+3.1K</div>
+			<div class="text-4xl font-semibold md:text-6xl">+3.1K</div>
 			<div>GIT</div>
 			<div>COMMITS</div>
 		</div>
@@ -40,10 +40,11 @@
 </Saos>
 <!-- skill cards -->
 <Saos animation={animString}>
-	<div class="flex gap-4">
-		<div class="card w-80 bg-primary text-primary-content">
+	<div class=" flex w-full flex-col justify-center gap-4 md:mx-0 md:flex-row">
+		<div class="card mx-5 bg-primary text-primary-content md:mx-0 md:w-80">
 			<div class="card-body px-7">
-				<h2 class="card-title">card stack</h2>
+				<Layers />
+
 				<p class="text-xl font-medium">FULL STACK DEVELOPMENT, CLOUD SYSTEMS</p>
 				<div class="card-actions justify-end">
 					<button
@@ -53,9 +54,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="card w-72 bg-secondary text-base-100">
+		<div class="card mx-5 bg-secondary text-base-100 md:mx-0 md:w-72">
 			<div class="card-body">
-				<h2 class="card-title">table</h2>
+				<Table2 />
 				<p class="text-xl font-medium">REACTJS, NEXTJS, AWS, KOTLIN, ANDROID</p>
 				<div class="card-actions justify-end">
 					<button
@@ -70,8 +71,8 @@
 
 <!-- recent projects -->
 <Saos animation={animString}>
-	<div class="space-y-8">
-		<div class="text-center text-8xl font-bold lg:text-left">
+	<div class="space-y-4 md:space-y-8">
+		<div class="text-center text-5xl font-bold md:text-7xl lg:text-left lg:text-8xl">
 			<div class="">RECENT</div>
 			<div class=" text-[#B6B4BD20]">PROJECTS</div>
 		</div>
@@ -81,13 +82,13 @@
 			class="group relative flex items-center gap-6 rounded-2xl p-6 hover:bg-base-200 hover:bg-opacity-5"
 		>
 			<div
-				class="absolute right-5 top-5 transform transition-transform duration-300 group-hover:-translate-y-[10px] group-hover:translate-x-[10px]"
+				class="absolute right-5 top-5 hidden transform transition-transform duration-300 group-hover:-translate-y-[10px] group-hover:translate-x-[10px] md:block"
 			>
 				<ArrowUpRight class="group-hover:text-primary" />
 			</div>
-			<div class="size-32 bg-slate-300"></div>
+			<div class="size-20 bg-slate-300 md:size-32"></div>
 			<div class="flex flex-col">
-				<div class="text-3xl font-medium">Project title</div>
+				<div class="text-xl font-medium md:text-3xl">Project title</div>
 				<div>brief summary</div>
 			</div>
 		</a>
@@ -96,14 +97,14 @@
 			class="group relative flex items-center gap-6 rounded-2xl p-6 hover:bg-base-200 hover:bg-opacity-5"
 		>
 			<div
-				class="absolute right-5 top-5 transform transition-transform duration-300 group-hover:-translate-y-[10px] group-hover:translate-x-[10px]"
+				class="absolute right-5 top-5 hidden transform transition-transform duration-300 group-hover:-translate-y-[10px] group-hover:translate-x-[10px] md:block"
 			>
 				<ArrowUpRight class="group-hover:text-primary" />
 			</div>
-			<div class="size-32 bg-slate-300"></div>
+			<div class="min-h-20 min-w-20 bg-slate-300 md:size-32"></div>
 			<div class="flex flex-col">
-				<div class="text-3xl font-medium">Project title</div>
-				<div>Lorem ipsum dolor sit amet consectetur, adipisici</div>
+				<div class="text-xl font-medium md:text-3xl">Project title</div>
+				<div>Lorem ipsum dolor, Lorem ipsum dolor sit amet</div>
 			</div>
 		</a>
 		<a
@@ -111,13 +112,13 @@
 			class="group relative flex items-center gap-6 rounded-2xl p-6 hover:bg-base-200 hover:bg-opacity-5"
 		>
 			<div
-				class="absolute right-5 top-5 transform transition-transform duration-300 group-hover:-translate-y-[10px] group-hover:translate-x-[10px]"
+				class="absolute right-5 top-5 hidden transform transition-transform duration-300 group-hover:-translate-y-[10px] group-hover:translate-x-[10px] md:block"
 			>
 				<ArrowUpRight class="group-hover:text-primary" />
 			</div>
-			<div class="size-32 bg-slate-300"></div>
+			<div class="size-20 bg-slate-300 md:size-32"></div>
 			<div class="flex flex-col">
-				<div class="text-3xl font-medium">Project title</div>
+				<div class="text-xl font-medium md:text-3xl">Project title</div>
 				<div>brief summary</div>
 			</div>
 		</a>
@@ -127,9 +128,9 @@
 <!-- experience -->
 <Saos animation={animString}>
 	<div class="space-y-4">
-		<div class="font-bold">
-			<div class="text-8xl">+3 YEARS OF</div>
-			<div class="text-8xl text-[#B6B4BD20]">EXPERIENCE</div>
+		<div class="text-center text-5xl font-bold md:text-left md:text-6xl lg:text-7xl">
+			<div class="">+3 YEARS OF</div>
+			<div class=" text-[#B6B4BD20]">EXPERIENCE</div>
 		</div>
 		<div class="flex flex-col gap-2">
 			<a
@@ -137,7 +138,7 @@
 				href="/"
 			>
 				<div
-					class="absolute right-10 top-10 transform transition-transform duration-300 group-hover:-translate-y-[10px] group-hover:translate-x-[10px]"
+					class="absolute right-10 top-10 hidden transform transition-transform duration-300 group-hover:-translate-y-[10px] group-hover:translate-x-[10px] md:block"
 				>
 					<ArrowUpRight class="group-hover:text-primary" />
 				</div>
@@ -154,7 +155,7 @@
 				href="/"
 			>
 				<div
-					class="absolute right-10 top-10 transform transition-transform duration-300 group-hover:-translate-y-[10px] group-hover:translate-x-[10px]"
+					class="absolute right-10 top-10 hidden transform transition-transform duration-300 group-hover:-translate-y-[10px] group-hover:translate-x-[10px] md:block"
 				>
 					<ArrowUpRight class="group-hover:text-primary" />
 				</div>
@@ -172,9 +173,9 @@
 <!-- blog descriptions -->
 <Saos animation={animString}>
 	<div class="space-y-4">
-		<div class="font-bold">
-			<div class="text-8xl">THINGS I</div>
-			<div class="text-8xl text-[#B6B4BD20]">WROTE</div>
+		<div class="text-6xl font-bold md:text-7xl lg:text-8xl">
+			<div class="">THINGS I</div>
+			<div class=" text-[#B6B4BD20]">WROTE</div>
 		</div>
 	</div>
 </Saos>
