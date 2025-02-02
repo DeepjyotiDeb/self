@@ -2,12 +2,14 @@
 	import Footer from '$lib/Components/Footer/Footer.svelte';
 	import Header from '$lib/Components/Header/Header.svelte';
 	import Home from '$lib/Components/Home.svelte';
+	import PageLoader from '$lib/Components/PageLoader.svelte';
 	import ProfileCard from '$lib/Components/ProfileCard.svelte';
 	import RelativeLink from '$lib/Components/RelativeLink.svelte';
 	import '../app.css';
 	let { children } = $props();
 </script>
 
+<PageLoader />
 <div class="flex min-h-screen flex-col">
 	<Header />
 	<div class="flex-grow">

@@ -10,7 +10,7 @@
 	<div class="text-center lg:text-left lg:text-9xl">
 		<div class="text-6xl font-bold md:text-7xl lg:text-8xl">
 			<div class="">SOFTWARE</div>
-			<div class=" text-[#B6B4BD20]">ENGINEER</div>
+			<div class=" text-[#B6B4BD70]">ENGINEER</div>
 		</div>
 		<div class="text-lg text-[#a7a8ac]">
 			I'm a software engineer with a passion for building things.
@@ -74,7 +74,7 @@
 	<div class="space-y-4 md:space-y-8">
 		<div class="text-center text-5xl font-bold md:text-7xl lg:text-left lg:text-8xl">
 			<div class="">RECENT</div>
-			<div class=" text-[#B6B4BD20]">PROJECTS</div>
+			<div class=" text-[#B6B4BD70]">PROJECTS</div>
 		</div>
 
 		<a
@@ -130,7 +130,7 @@
 	<div class="space-y-4">
 		<div class="text-center text-5xl font-bold md:text-left md:text-6xl lg:text-7xl">
 			<div class="">+3 YEARS OF</div>
-			<div class=" text-[#B6B4BD20]">EXPERIENCE</div>
+			<div class=" text-[#B6B4BD70]">EXPERIENCE</div>
 		</div>
 		<div class="flex flex-col gap-2">
 			<a
@@ -173,9 +173,9 @@
 <!-- blog descriptions -->
 <Saos animation={animString}>
 	<div class="space-y-4">
-		<div class="text-6xl font-bold md:text-7xl lg:text-8xl">
+		<div class="text-center text-5xl font-bold md:text-left md:text-7xl lg:text-8xl">
 			<div class="">THINGS I</div>
-			<div class=" text-[#B6B4BD20]">WROTE</div>
+			<div class=" text-[#B6B4BD70]">WROTE</div>
 		</div>
 	</div>
 </Saos>
