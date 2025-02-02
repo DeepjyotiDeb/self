@@ -18,7 +18,7 @@
 		>
 			<!-- Profile Card -->
 			<ProfileCard />
-			<div class="mx-auto space-y-9 lg:mx-0 lg:w-[55%] lg:pl-6 lg:pt-6">
+			<div class="prose mx-0 space-y-9 px-4 md:mx-auto lg:mx-0 lg:w-[55%] lg:pl-6 lg:pt-6">
 				{@render children()}
 			</div>
 		</div>

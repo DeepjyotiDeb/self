@@ -15,7 +15,7 @@ export default {
 		}
 	},
 
-	plugins: [daisyui, typography, forms, containerQueries],
+	plugins: [typography, daisyui, forms, containerQueries],
 	daisyui: {
 		themes: [
 			{
